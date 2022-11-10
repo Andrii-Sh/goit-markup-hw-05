@@ -21,6 +21,8 @@
         sans-serif;
     --indent: 30px;
     --cards-in-row: 3;
+    --hover-focus-duration: 250ms;
+    --hover-focus-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* General */
@@ -178,6 +180,8 @@ body {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .site-nav .current {
@@ -205,6 +209,8 @@ body {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .site-nav .link:hover,
@@ -271,6 +277,8 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+
+    transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .hero-btn:hover,
@@ -410,6 +418,8 @@ text-align: center;
     border-radius: 50%;
     color: var(--socials-primary-fill);
     background-color: var(--team-card-bg-color);
+
+    transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function), color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .social-list-link:hover, 
@@ -437,6 +447,8 @@ text-align: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: var(--socials-primary-fill);
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 } 
 
 .clients-logo:hover, 
@@ -482,6 +494,8 @@ text-align: center;
     border-radius: 50%;
     color: var(--socials-secondary-fill);
     background-color: var(--socials-footer-bg-fill);
+
+    transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .footer-socials-link:hover, 
@@ -517,6 +531,8 @@ text-align: center;
     color: var(--address-footer-color); 
 
     font-style: normal;
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .address .link:hover,
@@ -537,6 +553,10 @@ text-align: center;
 
 .portfolio-card {
     background: var(--portfolio-card-bg-color);
+}
+
+.portfolio-card > .link {
+    transition: box-shadow var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .portfolio-card > .link:hover, 
@@ -606,6 +626,10 @@ text-align: center;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function),
+     background-color var(--hover-focus-duration) var(--hover-focus-timing-function),
+     box-shadow var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .portfolio-btn-item:not(:last-child) {
