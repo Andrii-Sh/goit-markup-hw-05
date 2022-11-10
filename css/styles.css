@@ -556,12 +556,12 @@ text-align: center;
     background: var(--portfolio-card-bg-color);
 }
 
-.portfolio-card > .link {
+.portfolio-card-link {
     transition: box-shadow var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
-.portfolio-card > .link:hover, 
-.portfolio-card > .link:focus {
+.portfolio-card-link:hover, 
+.portfolio-card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -627,8 +627,8 @@ text-align: center;
     transition: transform var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
-.portfolio-card > .link:hover .potfolio-thumb-overlay,
-.portfolio-card > .link:focus .potfolio-thumb-overlay {
+.portfolio-card-link:hover .potfolio-thumb-overlay,
+.portfolio-card-link:focus .potfolio-thumb-overlay {
     transform: translateY(0);
 }
 
