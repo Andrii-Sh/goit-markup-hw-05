@@ -607,12 +607,12 @@ text-align: center;
     line-height: calc(30 / 16);  
 }
 
-.potfolio-img-overlay {
+.potfolio-thumb {
     position: relative;
     overflow: hidden;
 }
 
-.potfolio-description-overlay {
+.potfolio-thumb-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -627,12 +627,12 @@ text-align: center;
     transition: transform var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
-.portfolio-card > .link:hover .potfolio-description-overlay,
-.portfolio-card > .link:focus .potfolio-description-overlay {
+.portfolio-card > .link:hover .potfolio-thumb-overlay,
+.portfolio-card > .link:focus .potfolio-thumb-overlay {
     transform: translateY(0);
 }
 
-.potfolio-description-text {
+.potfolio-thumb-description {
     font-weight: 400;
     font-size: 18px;
     line-height: calc(28 / 18);
