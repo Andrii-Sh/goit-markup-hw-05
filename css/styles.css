@@ -173,7 +173,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 32px 2px 31px 2px;
+    padding: 32px 2px 31px 2px; /* лівий та правий паддінги взяти орієнтовно (для симетричності нижньої декоративної риски), так як на макеті у Студії значення 1/2 px, а у Портфоліо 3/3 px */
 
     color: var(--secondary-color);
 
