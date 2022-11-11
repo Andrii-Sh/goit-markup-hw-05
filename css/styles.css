@@ -5,6 +5,7 @@
     --logo-primary-color: #000000;
     --logo-secondary-color: #FFFFFF;
     --address-footer-color: rgba(255, 255, 255, 0.6);
+    --address-footer-secondary-color: #ffffff;
     --hero-and-footer-background-color: #2F303A;
     --hero-btn-backhround-hover: #188CE8;
     --portfolio-btn-background-color: #F5F4FA;
@@ -529,16 +530,25 @@ text-align: center;
 /* address */
 
 .address .link {
-    color: var(--address-footer-color); 
+    /* color: var(--address-footer-color);  */
 
     font-style: normal;
 
     transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
+.address .link-map {
+    color: var(--address-footer-secondary-color);
+}
+
+.address .link-mail, 
+.address .link-tel {
+    color: var(--address-footer-color);
+}
+
 .address .link:hover,
 .address .link:focus {
-    color: var(--logo-secondary-color);
+    color: var(--brand-color);
 }
 
 .address-item {
@@ -689,7 +699,7 @@ text-align: center;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity var(--hover-focus-duration) var(--hover-focus-timing-function);
+    transition: opacity var(--hover-focus-duration) var(--hover-focus-timing-function), visibility var(--hover-focus-duration) var(--hover-focus-timing-function);
     
 }
 
@@ -700,6 +710,7 @@ text-align: center;
 }
 
 .backdrop.is-hidden .modal {
+    opacity: 0;
     transform: translate(-50%, -50%) scale(0.6);
 }
 
@@ -716,7 +727,7 @@ text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transition: transform var(--hover-focus-duration) var(--hover-focus-timing-function);
+    transition: transform var(--hover-focus-duration) var(--hover-focus-timing-function), opacity var(--hover-focus-duration) var(--hover-focus-timing-function);
 }
 
 .modal-btn {
